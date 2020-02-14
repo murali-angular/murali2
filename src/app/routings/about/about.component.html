@@ -1,0 +1,16 @@
+<div class="container">
+    <!-- <h1>About US</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a
+        type specimen book</p>
+        <app-ngfor></app-ngfor> -->
+
+    <h2>About us</h2>
+    <input type="text" placeholder="Input here.." #val>
+    <button (click)="submitValue(val)">Submit Value</button>
+    <app-comp1 *ngIf="comp1Exist" [myValue]="value">ngContent:  {{value}}</app-comp1>
+    <br>
+    <br>
+    <button (click)="destroy()" class="btn btn-danger">Destroy Component</button>
+ </div>

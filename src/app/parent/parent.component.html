@@ -1,0 +1,54 @@
+<div class="container">
+    <h1>Buy Products</h1>
+
+    <div class="alert alert-light border d-flex align-items-center" *ngIf="addedProduct">
+        <strong class="text-success">{{addedProduct}}</strong> &nbsp is selected and Added in Cart
+        <button class="btn btn-success ml-auto">Checkout</button>
+    </div>
+
+    <hr class="mb-3">
+    <div class="col-md-12">
+        <div class="card">
+            <img src="../../assets/laptop.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="card-title">Laptop</div>
+                <button class="btn btn-success" (click)="onSelectProduct('Laptop')">Select this product</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../../assets/mobile.jpeg" class="card-img-top" alt="...">
+
+            <div class="card-body">
+                <div class="card-title">Mobile</div>
+                <button class="btn btn-success" (click)="onSelectProduct('Mobile')">Select this product</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../../assets/tv.jpg" class="card-img-top" alt="...">
+
+            <div class="card-body">
+                <div class="card-title">Television</div>
+                <button class="btn btn-success" (click)="onSelectProduct('Television')">Select this product</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="../../assets/washing machine.jpg" class="card-img-top" alt="...">
+
+            <div class="card-body">
+                <div class="card-title">Washing Machine</div>
+                <button class="btn btn-success" (click)="onSelectProduct('Washing Machine')">Select this
+                    product</button>
+            </div>
+        </div>
+    </div>
+    <!-- <input type="text" placeholder="Search" [value]="murali manohar"> -->
+
+    <app-child class="w-100" [proSelected]="proSelected" [selectedProduct]="selProduct"
+        (addedProduct)="onAddedProduct($event)">
+    </app-child>
+    <div class="col-md-12 bg-success text-white text-center py-4">
+        <h2 *ngIf="!proSelected">Please select any Product</h2>
+        <h2 *ngIf="proSelected">{{selectedProduct}}</h2>
+        <button class="btn btn-success" (click)="onAddedProduct()">Add to Cart</button>
+    </div>
+</div>

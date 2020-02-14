@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="block-left">
+            <a href="#"><img src=".../../../../../assets/images/logo.jpg" width="100px"></a>
+            <ng-container>
+                <a routerLink="/gallery" class="back" *ngIf="goBackLink">
+                    <i class="fas fa-cheveron-left"></i>{{goBackLink.text}}
+                </a>
+            </ng-container>
+        </div>
+        <div class="block center">
+            <app-menu *ngIf="headerNav"></app-menu>
+        </div>
+        <div class="block right">
+            <ng-container *ngIf="headerLoginBlock">
+                <button *ngIf="!loggedInUser" class="btn btn-outline-primary" routerLink=></button>
+                <ul *ngIf="loggedInUser">
+                    <li>
+                        Welcome <strong class="text-primary">{{loggedInUser}}</strong>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" (click)="onLogOut()"><i class="fas fa-unlock"></i>Logout</a>
+                    </li>
+                </ul>
+            </ng-container>
+        </div>
+    </div>
+</div>

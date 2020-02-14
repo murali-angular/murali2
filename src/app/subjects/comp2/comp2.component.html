@@ -1,0 +1,13 @@
+<div class="box" appTest>
+    Username: <strong>{{userName}}</strong>
+    <br><br>
+<!-- 
+    <input type="text" placeholder="Update Name" #uname> -->
+    <button (click)="clickMe()">Click Me</button>
+    <button (click)="changeColor('red')">Red</button>
+    <button (click)="changeColor('green')">Green</button>
+    <br>
+
+    <ng-content></ng-content>
+
+</div>

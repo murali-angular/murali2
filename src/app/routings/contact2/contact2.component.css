@@ -1,0 +1,45 @@
+.page-area{
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align:center;
+    min-height: 400px;
+    background: #f7f7f7;
+}
+
+input.ng-invalid.ng-touched
+ {
+    border: 1px solid red;
+    box-shadow: 0 0 13px inset rgba(255,0,0,0.09);
+}
+.btn-add{
+    font-size: 13px;
+    font-weight: 700px;
+    color: rgba(0,0,0,0.4);
+}
+.btn-add i {
+    font-size: 33px;
+    line-height: 12px;
+    display: inline-block;
+    position: relative;
+    top:6px;
+    margin-right: 3px;
+}
+.btn-add:hover{
+    border: 1px solid #007bff;
+    background: #fff;
+    color: #007bff;
+}
+.myRecForm.INVALID{
+    border: 1px solid red;
+    box-shadow:0 0 37px rgba(255,0,0,0.2)
+}
+
+.myRecForm.PENDING{
+    border: 1px solid #bbff00;
+    box-shadow:0 0 37px #0044ff33
+}
+.myRecForm.VALID{
+    border: 1px solid red;
+    box-shadow:0 0 37px rgba(0, 255, 106, 0.2)
+}

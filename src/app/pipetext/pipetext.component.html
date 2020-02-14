@@ -1,0 +1,43 @@
+<div class="page-area">
+    <!-- <h1>Pipe</h1>
+    <h4>{{value | uxpipe:10}}</h4>
+    <ul>
+        <li *ngFor="let name of nameArr">
+            {{name | uxpipe:8}
+       </li>
+    </ul> -->
+    
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label for="search">Email address
+                </label>
+                <input type="email" class="form-control" id="search"
+                placeholder="Search Product by Name" [(ngModel)]="nameSearch">
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-8">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of productArr | filter:nameSearch">
+                    <th scope="row">{{product.sno}}</th>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}</td>
+                    <td>
+                        <h5><span class="badge badge-success">{{product.availability}}</span></h5>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+
+<body>
+    <div class="container w-100">
+        <div class="row">
+            <div class="col-lg-10 col-xl-9 mx-auto">
+                <div class="card card-signin flex-row my-5">
+                    <div class="card-img-left d-none d-md-flex">
+                        <!-- Background image for card set in CSS! -->
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Register</h5>
+                        <img class="mb-4" src="../../assets/images/logo.png" alt="200">
+                        <form class="form-signin">
+                            <div class="form-label-group">
+                                <input type="text"  #username id="inputUserame" class="form-control" placeholder="password"
+                                    required autofocus>
+                                <input type="password"  #passworc id="inputPassword" class="form-control" placeholder="passworc"
+                                    required autofocus>
+                                <div class="checkbox my-3">
+                                     <label>
+                                         <input type="checkbox" value="remember-me"> Remember me
+                                     </label>
+                                </div>
+                           <button (click)="onLoggedIn(username,password)" class="btn btn-success btn-block" >
+
+                             <p class="mt-5 mb-3 text-muted">0 2010-2019</p>
+                       
+                           </button>     
+
+
+                                </div>
+                            </div>
+
+                            <hr>
+
+
+
+                            <button (click)="onLoggedIn(username)" class="btn btn-lg btn-primary btn-block text-uppercase"
+                                type="button">Sign In</button>
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

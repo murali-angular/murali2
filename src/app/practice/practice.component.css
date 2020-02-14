@@ -1,0 +1,36 @@
+p{
+    font-family: Lato;
+}
+.row{
+    display:flex;
+    justify-content:space-between ;
+  }
+
+.parentBox{
+    background: #fdfdfd;
+    border: 1px solid #d9d9d9;
+    padding:15px;
+    border-radius: 5px;
+    width:40%;
+}
+
+.parentBox h2{
+    color: #4ec65f;
+    font-size:42px;
+    margin:0;
+    padding:0;
+
+}
+
+.parentBox table{
+    font-size: 30px;
+    text-align: left;
+
+}
+.parentBox table th{
+   background-color: aqua;
+}
+.removeLink{
+    color:#d00421;
+}
+

@@ -1,0 +1,59 @@
+<div class="container">
+    <h1>products</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a
+        type specimen book</p>
+
+    <hr class="mb-3">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card" appTest>
+                <img src="../../assets/laptop.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <div class="card-title">Home page</div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a routerLink="laptop" class="btn btn-success">Know more</a>
+                </div>
+
+            </div>
+            <div class="card" appTest>
+                <img src="../../assets/mobile.jpeg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <div class="card-title">Mobile</div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a routerLink="mobile" class="btn btn-success">Know more</a>
+                </div>
+
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/tv.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <div class="card-title">Television</div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a routerLink="television" class="btn btn-success">Know more</a>
+                </div>
+
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/washing machine.jpg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <div class="card-title">Washing Machine</div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a routerLink="washing-machine" class="btn btn-success">Know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 border-left">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
